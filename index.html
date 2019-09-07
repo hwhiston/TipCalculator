@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Halen's Tip Calculator</title>
+        <link rel="stylesheet" href="css/bootstrap.min.css"> 
+        <link rel="stylesheet" href="css/styles.css"> 
+    </head>
+    <body>
+        <div class="container">
+          
+            <!-- Title -->
+            <div class="block">
+                <h1 class="text-center">Tip Calculator</h1>
+            </div>
+            
+            <!-- Cost Field -->
+            <div class="block">
+                <label>Bill cost ($):</label>
+                <input id="cost" type="number" class="form-control" min="1" step="any"/>
+            </div>
+            
+            <!-- Quality Field -->
+            <div class="block">
+                <label>Service quality:</label>
+                <select id="quality" class="form-control">
+                    <option value="" disabled selected>Select your quality</option>
+                    <option value="0.3">30% - Excellent!</option>
+                    <option value="0.2">20% - Good!</option>
+                    <option value="0.15">15% - Satisfactory</option>
+                    <option value="0.1">10% - Eh</option>
+                    <option value="0.05">5% - Bad</option>
+                </select>
+            </div>
+            
+            <!-- Guests Field -->
+            <div class="block">
+                <label>Number of guests:</label>
+                <input id="guests" type="number" class="form-control" min="1"/>
+            </div>
+            
+            <!-- Tip Per Person -->
+            <div class="block text-center">
+                <label>Tip Per Person</label>
+                <p>$0.00</p>
+                <div class="tip-underline"></div>
+            </div>
+            
+            <!-- Button -->
+            <div class="block">
+                <button class="calculate form-control">Calculate</button>
+            </div>
+            
+            <!-- Copyright -->
+            <p class="copyright">App by Halen Whiston</p>
+        </div>
+    </body>
+</html>
+
+<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="js/calc.js"></script>
